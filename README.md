@@ -1,14 +1,8 @@
-# 🕸 WebServ 🤖
-
-> This repository contains a "webserv" project that is part of the École 42 curriculum.
-
-Webserv project involves creating a web server that handles HTTP requests. In order to understand the project, it's important to have a good understanding of the HTTP protocol and the main concepts of a web server.
-
-## 📚 Guide part
+# WebServ
 
 ### HTTP Protocol
 
-HTTP stands for Hypertext Transfer Protocol. It is an application-layer protocol that allows communication between clients and servers over the internet. It is the foundation of data communication for the World Wide Web.
+HTTP stands for Hypertext Transfer Protocol. It is an application-layer protocol that allows communication between clients and servers over the internet.
 
 The HTTP protocol works on a client-server model, where the client sends a request to the server and the server responds with the requested data. The request and response are made up of different components, including:
 
@@ -46,50 +40,51 @@ The WebServ project has the following requirements:
 - **Documentation**: Provide clear documentation on how to build, run, and use the server.
 - **Bonus**: Implement Python and PHP CGI, and cookie support.
 
-## 🏇 Getting Started
+## To test the server:
 
-To get started with the WebServ project, follow these steps:
-
-1. **Clone the Repository**: Clone the WebServ repository to your local machine using the following command:
+1. **Clone the Repository**:
 
 ```bash
-git clone https://github.com/BredyByte/webserv webserv
+git clone https://github.com/gkrusta/Webserv webserv
 ```
 
-2. **Build the Project**: Build the project by running the following commands:
+2. **Build the Project**:
 
 ```bash
 cd webserv/webserver && make
 ```
 
-3. **Run the Server**: Run the server using the following command:
+3. **Run the Server**:
 
 ```bash
 ./webserv ./config_file
 ```
 
-4. **Test the Server cURL**: Test the server by sending HTTP requests to it using a web browser or a tool like cURL. File var/curl/CurlCommands.txt contains some curl commands to test the server
+4. **Test the Server cURL**: 
+- File var/curl/CurlCommands.txt contains some curl commands to test the server.
 
-5. **Test the Server with sige**: Test the server with sige, a simple HTTP load tester. Install it and execute the following command:
-
+5. **Test the Server with sige**:
+- Test the server with sige, a simple HTTP load tester. Install it and execute the following command:
+- -b stands for benchmark meaning that the requests are being send without waiting the repsonse of previous request.
+- -c stands for number of clients
+- -t stands for time the test will be executed
+- you must use the conection version 127.0.0.1
 ```bash
-siege -b -t 50s -c 25 http://127.0.0.1:8080/
+siege -b -t50s -c25 http://127.0.0.1:8080/
 ```
 
-## 📝 Resources
+## Resources
 
 - [HTTP Protocol](https://developer.mozilla.org/en-US/docs/Web/HTTP) - Mozilla Developer Network, helpful resource for learning about the HTTP protocol. <b>Highly recommended.</b>
 
 - [Beej's Guide to Network Programming Using Internet Sockets](https://beej.us/guide/bgnet/html/) - A comprehensive guide to network programming using sockets. <b>Highly recommended.</b>
 
-- [Web Server](https://en.wikipedia.org/wiki/Web_server) - Wikipedia, overview of web servers and how they work.
+- [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) - All about HTTP code ranges, cookies, redirections.
 
 - [Nginx Documentation](https://nginx.org/en/docs/) - Official documentation for the Nginx web server, a popular open-source web server.
 
 - [cURL Documentation](https://curl.se/docs/) - Official documentation for cURL, a command-line tool for transferring data with URLs.
 
-## 🙏 Appreciation Corner
+## Teammates:
 
-This remarkable project was accomplished and refined to its finest form through the assistance of my comrades and collaborators, the ingenious 💡[dbredykh](https://github.com/BredyByte/), the diligent 💪[gkrusta](https://github.com/gkrusta).
-
-
+ 🐒   [dbredykh](https://github.com/BredyByte/)   &   🦍   [pvilchez](https://github.com/pablovilchez)
