@@ -52,7 +52,7 @@ The WebServ project has the following requirements:
 - **Documentation**: Provide clear documentation on how to build, run, and use the server.
 - **Bonus**: Implement Python and PHP CGI, and cookie support.
 
-## To test the server:
+## Installation:
 
 1. **Clone the Repository**:
 
@@ -69,7 +69,7 @@ cd webserv/webserver && make
 3. **Run the Server**:
 
 ```bash
-./webserv ./config_file
+./webserv config_file
 ```
 
 4. **Test the Server cURL**: 
